@@ -232,6 +232,7 @@ header .container .menu li a:hover {
 header .container .iconList {
   display: flex;
   position: absolute;
+  cursor: pointer;
   left: -50px;
   top: 20px;
   justify-content: center;
@@ -686,12 +687,12 @@ ul {
   color: #fff;
   padding-right: 8px;
 }
-.footer-col .forms form label {
+.footer-col .ms form label {
   display: block;
   font-size: 18px;
   color: #bbb;
 }
-/* .footer-col .forms form input {
+/* .footer-col .ms form input {
   width: 100%;
   height: 40px;
   font-size: 16px;
@@ -702,7 +703,7 @@ ul {
   font-weight: normal;
   padding: 0 20px;
 } */
-.footer-col .forms form textarea {
+.footer-col .ms form textarea {
   min-width: 100%;
   max-width: 100%;
   min-height: 145px;
@@ -715,15 +716,15 @@ ul {
   font-weight: normal;
   padding: 5px 10px;
 }
-/* .footer-col .forms form input:focus {
+/* .footer-col .ms form input:focus {
   border: 2px solid #ddd;
   outline: none;
 } */
-.footer-col .forms form textarea:focus {
+.footer-col .ms form textarea:focus {
   border: 2px solid #ddd;
   outline: none;
 }
-.footer-col .forms form button {
+.footer-col .ms form button {
   width: 100%;
   height: 40px;
   border-radius: 5px;
@@ -1366,7 +1367,7 @@ footer .qtf p {
               </div>
               <div class="footer-col">
                   <h4>أرسل رسالة</h4>
-                  <div class="forms">
+                  <div class="ms">
                     <form action="">
                       <textarea name="comment" id="comment"></textarea>
                       <button value="submit">Submit</button>
@@ -1467,6 +1468,7 @@ footer .qtf p {
   position: fixed;
   left: -300px;
   top: 0;
+  display: none;
   z-index: 10;
   transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -1476,6 +1478,7 @@ footer .qtf p {
 
 }
 .side.active {
+  display: block;
   left: 0;
 }
 .side .cl {
@@ -1543,8 +1546,9 @@ footer .qtf p {
   width: 100%;
   padding-bottom: 70px;
   position: fixed;
-  bottom: -700px;
+  display: none;
   left: 0;
+  bottom: 0;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -1556,7 +1560,7 @@ footer .qtf p {
   z-index: 2000;
 }
 .forms.active {
-  bottom: 0;
+  display: block;
 }
 .forms .content {
   padding: 20px 100px;
@@ -1883,31 +1887,3 @@ footer .qtf p {
     <script src="https://kit.fontawesome.com/ac5cf7bda1.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
-                <!-- <div class="card">
-                  <div class="img">
-                    <img src="" alt="">
-                    <i class="fas fa-file-alt"></i>
-                  </div>
-                  <div class="text">
-                    <h3></h3>
-                    <p>
-                
-                    </p>
-                  </div>
-                  <div class="buttons">
-                    <a href="الشخصيات/عبد المنعم رياض/index.html" target="blank" class="view">المزيد من المعلومات</a>
-                    <span class="share"><i class="fas fa-share-alt"></i></span>
-                    <ul>
-                      <li>
-                        <a href="#" target="blank"><i class="fab fa-facebook"></i> Facebock</a>
-                      </li>
-                      <li>
-                        <a href="#" target="blank"><i class="fab fa-twitter"></i> twitter</a>
-                      </li>
-                      <li>
-                        <a href="#" target="blank"><i class="fab fa-whatsapp"></i> whatsapp</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div> -->
